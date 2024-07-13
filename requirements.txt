@@ -1,0 +1,9 @@
+# https://github.com/tiangolo/uwsgi-nginx-flask-docker/blob/37fc2954d3e1c5f9a1fdd46763d75f7be8f50f7f/docker-images/requirements.txt
+flask==2.2.5
+# Dockerfile
+pyOpenSSL==24.1.0
+gevent==24.2.1
+# .env
+python-dotenv==1.0.1
+
+requests==2.32.3
