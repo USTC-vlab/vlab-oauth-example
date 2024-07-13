@@ -1,0 +1,11 @@
+services:
+  vlab-oauth:
+    image: ghcr.io/ustc-vlab/vlab-oauth-example:latest
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:12355:80
+    environment:
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${CLIENT_SECRET}
+      - REDIRECT_URL=https://vlab-oauth-example.taoky.moe/callback
+      - SECRET_KEY=${SECRET_KEY}
